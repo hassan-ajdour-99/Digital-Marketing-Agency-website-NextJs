@@ -1,0 +1,20 @@
+.container {
+  height: 75px;
+  background-color: rgb(221, 17, 17);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.container h1 {
+  color: #fff;
+}
+
+.listItem {
+  display: inline;
+  margin-right: 30px;
+  font-size: 23px;
+  cursor: pointer;
+}
