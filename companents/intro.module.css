@@ -2,10 +2,45 @@
   width: 100%;
   height: calc(100vh - 50px);
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
 
 .card {
   flex: 1;
   padding: 100px;
   padding-right: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.brand {
+  font-size: 50px;
+  color: crimson;
+}
+
+.title {
+  font-size: bold;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: crimson;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 16px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
 }
