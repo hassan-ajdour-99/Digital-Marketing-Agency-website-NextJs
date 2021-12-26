@@ -1,0 +1,28 @@
+.container {
+  height: 250px;
+  background-color: rgb(255, 21, 21);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.linkTitle {
+  font-size: 26px;
+  text-decoration: underline;
+  color: rgb(19, 8, 24);
+}
+
+.linkText {
+  padding: 0.5rem;
+}
+
+.cartItem {
+  padding: 0.25rem;
+  font-size: 20px;
+}

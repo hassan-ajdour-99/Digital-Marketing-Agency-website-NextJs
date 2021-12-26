@@ -1,6 +1,6 @@
 import Head from "next/head";
 import classes from "../styles/Home.module.css";
-import Intro from "../companents/intro";
+import Intro from "../companents/Layout/intro";
 import Services from "../companents/Services/services";
 import { data } from "../data";
 import Testimontials from "../companents/Testimonials/testimonials";
