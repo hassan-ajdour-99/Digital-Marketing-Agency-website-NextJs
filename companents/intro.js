@@ -13,8 +13,7 @@ function Intro() {
           Marketing Agency
         </h1>
         <p className={classes.description}>
-          We help you to sell your products & reach to more clients We help you
-          to sell your products & reach to more clients .
+          We help you to sell your products & reach to more clients .
         </p>
         <button className={classes.btn}>Discover</button>
       </div>
