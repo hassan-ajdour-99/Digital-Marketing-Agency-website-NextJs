@@ -1,7 +1,7 @@
 import React from "react";
 
 function Product() {
-  return <div></div>;
+  return <div className={classes.container}></div>;
 }
 
 export default Product;
