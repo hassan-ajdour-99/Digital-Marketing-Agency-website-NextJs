@@ -1,5 +1,34 @@
 .container {
-  max-width: 1000px;
-  margin: auto;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+}
+
+.form {
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputSmall {
+  flex: 1;
+  height: 50px;
+}
+
+.inputSmall:first-child {
+  margin-right: 5px;
+}
+
+.inputLarge {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
 }
