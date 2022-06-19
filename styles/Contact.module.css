@@ -5,30 +5,60 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
+  background-color: rgb(0, 22, 54);
+  padding: 50px;
 }
 
-.title {
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
 }
 
 .form {
-  width: 500px;
-  height: 500px;
-  padding: 50px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .inputSmall {
-  flex: 1;
-  height: 50px;
-}
-
-.inputSmall:first-child {
-  margin-right: 5px;
-}
-
-.inputLarge {
+  padding: 15px;
+  overflow: none;
   width: 100%;
+  border: solid 1px indigo;
+  font-size: 20px;
+}
+
+.title2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: indigo;
+  font-size: 25px;
+}
+
+.textarea {
+  padding: 15px;
+  overflow: none;
+  width: 100%;
+  border: solid 1px rgb(2, 48, 148);
+  height: 100px;
+  font-size: 20px;
+}
+
+.textarea:hover {
+  border: rgb(105, 39, 1);
+}
+
+.button {
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  background-color: indigo;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
   height: 50px;
-  padding-left: 10px;
 }

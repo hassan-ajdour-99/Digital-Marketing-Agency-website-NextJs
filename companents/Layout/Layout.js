@@ -5,9 +5,9 @@ import Footer from "./footer";
 function Layout(props) {
   return (
     <Fragment>
-      <Header></Header>
+      <Header />
       {props.children}
-      <Footer></Footer>
+      <Footer />
     </Fragment>
   );
 }

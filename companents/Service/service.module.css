@@ -1,0 +1,46 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.service {
+  display: flex;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  padding: 3rem;
+  border-radius: 53% 47% 72% 28% / 63% 55% 45% 37%;
+  background: conic-gradient(rgb(4, 84, 214), rgb(224, 7, 141));
+}
+
+.title {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+.button {
+  border: none;
+  background-color: rgb(75, 7, 102);
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.button:hover {
+  transform: scale(1);
+  background-color: rgb(26, 26, 177);
+}

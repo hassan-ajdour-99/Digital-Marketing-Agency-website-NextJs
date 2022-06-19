@@ -1,10 +1,10 @@
 .container {
-  height: 250px;
-  background-color: rgb(255, 21, 21);
+  height: 350px;
+  background-color: #570fe6;
   color: #fff;
   display: flex;
   justify-content: space-around;
-  padding: 4rem;
+  padding: 5rem;
   align-items: center;
 }
 
@@ -25,4 +25,27 @@
 .cartItem {
   padding: 0.25rem;
   font-size: 20px;
+}
+
+.cartItem i {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.icons {
+  color: #fff;
+}
+
+.social span {
+  font-size: 26px;
+  padding: 7px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

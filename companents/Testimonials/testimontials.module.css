@@ -1,60 +1,45 @@
 .container {
   max-width: 1100px;
   margin: auto;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
 }
 
-.wrapper {
+.header {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  color: rgb(52, 23, 147);
+  margin-top: 7rem;
 }
 
 .title {
-  text-align: center;
-  margin: 0;
-}
-
-.card {
-  width: 30%;
-}
-
-.comment {
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.person {
+  color: #02203d;
+  align-items: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.avatar {
-  border-radius: 50%;
-}
-
-.info {
+.feedbacks {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-  padding: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.username {
-  font-size: 22px;
-  font-weight: 300;
-  color: darkred;
+.feedback {
+  background-color: rgb(200, 200, 246);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: #111;
+  margin-bottom: 2rem;
 }
 
-.Jobtitle {
-  font-size: 18px;
-  color: darkblue;
+@media (max-width: 500px) {
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+  }
+  .feedbacks {
+    display: flex;
+    flex-direction: column;
+  }
 }

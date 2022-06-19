@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Head from "next/head";
 import Link from "next/link";
-import { data } from "../../data";
+import { services } from "../../data";
+import Feature from "../../companents/Layout/feature";
+import Testimontials from "../../companents/Testimonials/testimonials";
 import classes from "../../styles/Product.module.css";
 
 function Product(props) {
@@ -8,33 +11,31 @@ function Product(props) {
 
   return (
     <div className={classes.container}>
-      <div className={classes.cardL}>
+      <Feature image={products.photo} description={products.desc} />
+      <h2 className={classes.header}> All DESIGN & OUR PORTFOLIO </h2>
+      <div className={classes.cards}>
         {products.images.map((item) => (
-          <div key={item.id} className={classes.imgContainer}>
-            <Image
-              src={item.url}
-              width="100%"
-              height="100%"
-              layout="responsive"
-              objectFit="cover"
-              alt=""
-            />
+          <div key={item.id}>
+            <div className={classes.card}>
+              <Image
+                src={item.image}
+                width="400px"
+                height="300px"
+                alt=""
+                className={classes.img}
+              />
+            </div>
+            <h3 className={classes.title}> {item.title} </h3>
           </div>
         ))}
       </div>
-      <div className={classes.cardS}>
-        <h1 className={classes.title}> {products.name} </h1>
-        <p className={classes.description}> {products.longDesc} </p>
-        <button className={classes.button}>
-          <Link href="/contact"> Contact </Link>
-        </button>
-      </div>
+      <Testimontials />
     </div>
   );
 }
 
 export const getStaticPaths = async () => {
-  const products = data;
+  const products = services;
 
   const paths = products.map((item) => {
     return {
@@ -51,7 +52,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (ctx) => {
   const name = ctx.params.name;
 
-  const product = data.filter((item) => item.name === name)[0];
+  const product = services.filter((item) => item.name === name)[0];
 
   return {
     props: { product },
