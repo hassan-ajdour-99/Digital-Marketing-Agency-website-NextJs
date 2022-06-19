@@ -49,7 +49,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async (ctx) => {
+export const getStaticProps = (ctx) => {
   const name = ctx.params.name;
 
   const product = services.filter((item) => item.name === name)[0];

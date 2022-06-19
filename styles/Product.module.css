@@ -6,7 +6,7 @@
 .card {
   width: 300px;
   height: 300px;
-  padding: 3rem;
+  padding: 4rem;
   border-radius: 53% 47% 72% 28% / 63% 55% 45% 37%;
   background: conic-gradient(rgb(4, 84, 214), rgb(224, 7, 141));
 }

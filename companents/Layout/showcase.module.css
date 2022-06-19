@@ -22,8 +22,10 @@
   width: 400px;
   height: 500px;
   padding: 3rem;
-  background: rgb(156, 156, 156);
   border-radius: 10px;
+  background-color: #3a2acd;
+  color: #fff;
+  box-shadow: 10px 10px 4px #d7d2d2;
 }
 
 @media (max-width: 500px) {

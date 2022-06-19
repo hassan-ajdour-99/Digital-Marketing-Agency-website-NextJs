@@ -4,6 +4,7 @@ import Intro from "../companents/Layout/intro";
 import Services from "../companents/Service/Services";
 import Showcase from "../companents/Layout/showcase";
 import Showcase1 from "../companents/Layout/Showcase1";
+import Prices from "../companents/Price/Pices";
 import { services } from "../data";
 import Testimontials from "../companents/Testimonials/testimonials";
 
@@ -33,6 +34,7 @@ export default function Home({ data }) {
       <Intro />
       <Services services={data} />
       <Showcase />
+      <Prices />
       <Showcase1 />
       <Testimontials />
     </div>

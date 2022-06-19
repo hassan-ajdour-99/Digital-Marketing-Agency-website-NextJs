@@ -35,7 +35,7 @@ function Testimontials() {
 
   return (
     <div className={classes.container}>
-      <h2 className={classes.header}> Look what Our Customer Said About us </h2>
+      <h2 className={classes.header}> Testimonials </h2>
       <div className={classes.feedbacks}>
         <div className={classes.feedback}>
           <div>
