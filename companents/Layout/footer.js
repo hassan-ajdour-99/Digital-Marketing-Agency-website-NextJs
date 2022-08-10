@@ -21,7 +21,7 @@ function Footer() {
           SALE , Hey Karima N 87 STREET - Morocco
         </div>
         <div className={classes.cartItem}>
-          <i class="fa fa-location-arrow"></i>
+          <i class="fas fa-location-arrow"></i>
           Contact@Diesefive.dev
         </div>
         <div className={classes.cartItem}>

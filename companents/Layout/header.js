@@ -16,18 +16,21 @@ function Header() {
 
   return (
     <div className={classes.container}>
-      <Link href="/">
-        <h1 className={classes.title}>Diesefive Media</h1>
+      <Link passHref href="/">
+        <h1 className={classes.title}> Forewaiten </h1>
       </Link>
       <ul className={classes.list}>
         <li className={classes.listItem}>
-          <Link href="/products/design"> Design </Link>
+          <Link href="/Blogs"> Blogs</Link>
         </li>
         <li className={classes.listItem}>
-          <Link href="/products/development"> Development </Link>
+          <Link href="/services/design-creation"> Design </Link>
         </li>
         <li className={classes.listItem}>
-          <Link href="/products/production"> Production </Link>
+          <Link href="/services/website-creation"> Development </Link>
+        </li>
+        <li className={classes.listItem}>
+          <Link href="/services/marketing"> Marketing </Link>
         </li>
         <li className={classes.listItem}>
           <Link href="/contact"> Contact </Link>
@@ -51,15 +54,20 @@ function Header() {
       >
         <ul className={classes.menuUl}>
           <li>
-            <Link href="/products/design" className={classes.Items}>
+            <Link href="/Blogs" className={classes.Items}>
+              Blogs
+            </Link>
+          </li>
+          <li>
+            <Link href="/services/design-creation" className={classes.Items}>
               Design
             </Link>
           </li>
           <li className={classes.MenuItem}>
-            <Link href="/products/development"> Development </Link>
+            <Link href="/services/website-creation"> Development </Link>
           </li>
           <li className={classes.MenuItem}>
-            <Link href="/products/production"> Production </Link>
+            <Link href="/services/marketing"> Marketing </Link>
           </li>
           <li className={classes.MenuItem}>
             <Link href="/contact"> Contact </Link>

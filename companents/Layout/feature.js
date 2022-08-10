@@ -7,7 +7,11 @@ function Feature(props) {
     <div className={classes.showcase}>
       <div className={classes.container}>
         <div className={classes.card1}>
-          <h2> {props.description} </h2>
+          <h2> {props.description} . </h2>
+          <p>
+            We offer Excellent service to your customers . The service ideas
+            that will help you to reach your customers Online .
+          </p>
           <button className={classes.btn}> contact </button>
         </div>
         <div className={classes.card2}>

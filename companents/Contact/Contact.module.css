@@ -1,0 +1,94 @@
+.container {
+  padding: 5rem;
+  background-color: rgb(26, 37, 190);
+}
+
+.content {
+  max-width: 75rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.contactPhoto {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: rgb(255, 0, 0);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.inputSmall {
+  padding: 10px;
+  overflow: none;
+  outline: none;
+  width: 100%;
+  border: solid 1px indigo;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.title2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(247, 245, 248);
+  font-size: 25px;
+}
+
+.textarea {
+  padding: 15px;
+  overflow: none;
+  outline: none;
+  width: 100%;
+  border: solid 1px indigo;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.button {
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  background-color: rgb(241, 235, 245);
+  color: rgb(107, 1, 228);
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.button:hover {
+  color: white;
+  background: rgb(107, 1, 228);
+}
+
+@media (max-width: 500px) {
+  .content {
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

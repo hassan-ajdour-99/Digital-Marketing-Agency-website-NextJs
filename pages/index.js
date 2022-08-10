@@ -4,47 +4,59 @@ import Intro from "../companents/Layout/intro";
 import Services from "../companents/Service/Services";
 import Showcase from "../companents/Layout/showcase";
 import Showcase1 from "../companents/Layout/Showcase1";
-import Prices from "../companents/Price/Pices";
-import { services } from "../data";
-import Testimontials from "../companents/Testimonials/testimonials";
+import Prices from "../companents/Price/Prices";
+import { services, prices, users } from "../data/data";
+import Users from "../companents/Users/Users";
+import Contact from "../companents/Contact/Contact";
 
-export default function Home({ data }) {
+export default function Home({ servicesData, pricesData, usersData }) {
   return (
     <div className={classes.container}>
       <Head>
-        <title> Diesefive Media </title>
+        <title> InvePlatform </title>
         <meta
           name="description"
           content="diesefive Digital is an Amazing Digital Marketing company in Morocco"
         />
-
         <meta
           name="description"
-          content="We Provide Amazing desings , Social media posters , and Logos to our Customers"
+          content="We Provide Amazing designs , Social media posters , and Logos to our Customers"
         />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          referrerpolicy="no-referrer"
+        />
         <meta
           name="description"
           content="The Best Digital Marketing Agency in Morocco"
         />
       </Head>
       <Intro />
-      <Services services={data} />
+      <Services services={servicesData} />
       <Showcase />
-      <Prices />
+      <Prices prices={pricesData} />
       <Showcase1 />
-      <Testimontials />
+      <Users />
+      <div className={classes.main}>
+        <Contact />
+      </div>
     </div>
   );
 }
 
 export const getStaticProps = () => {
-  const data = services;
+  const servicesData = services;
+  const pricesData = prices;
+  const usersData = users;
 
   return {
-    props: { data },
+    props: {
+      servicesData,
+      pricesData,
+      usersData,
+    },
   };
 };

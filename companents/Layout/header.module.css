@@ -1,5 +1,4 @@
 .container {
-  height: 75px;
   background-color: #5e17eb;
   color: #fff;
   display: flex;
@@ -25,9 +24,10 @@
 }
 
 .listItem:last-child {
-  border: 2px solid #ffffff;
-  padding: 10px;
+  border: 1px solid #ffffff;
+  padding: 12px;
   border-radius: 14px;
+  font-size: 20px;
 }
 
 .logoImage {
@@ -94,14 +94,26 @@
   .container {
     padding: 0 20px;
   }
+
   .listItem {
     display: flex;
     height: 300px;
   }
 
+  .menuContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 100;
+  }
+
   .humrbger {
     top: 0;
-    left: 0;
+    right: 0;
     margin-top: 0;
     display: flex;
     flex-direction: column;
@@ -126,9 +138,10 @@
     display: block;
     right: 0;
     position: absolute;
-    width: 60vw;
-    height: 650px;
-    background-color: #5e17eb;
+    width: 60%;
+    height: 500px;
+    /* background-color: #5e17eb; */
+    background-color: #22065a;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -136,6 +149,7 @@
     z-index: 999;
     animation: slideInFromRight 0.3s ease-in;
     overflow: none;
+    cursor: pointer;
   }
 
   .menuUl li {
@@ -144,7 +158,9 @@
     justify-items: center;
     justify-content: space-around;
     padding: 20px;
-    font-size: 26px;
+    font-size: 25px;
     list-style: none;
+    border-bottom: 0.7px solid #fff;
+    width: 60%;
   }
 }

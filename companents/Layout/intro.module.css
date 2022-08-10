@@ -3,7 +3,7 @@
   overflow: hidden;
   position: relative;
   background-color: #5e17eb;
-  height: 540px;
+  height: 560px;
 }
 
 .showcase::before,
@@ -15,6 +15,7 @@
   right: 0;
   left: 0;
   background: rgb(47, 4, 104);
+  background-color: #ffff;
   transform: skewY(-3deg);
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
