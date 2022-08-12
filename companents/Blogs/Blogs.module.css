@@ -1,0 +1,9 @@
+.container {
+  padding: 10rem;
+}
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

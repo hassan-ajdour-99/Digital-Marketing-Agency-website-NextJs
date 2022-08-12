@@ -24,8 +24,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #dccc;
-  background: rgb(245, 245, 255);
+  /* border: 0.7px solid #dccc; */
+  background-color: rgb(232, 239, 255);
   padding: 2rem;
   padding-bottom: 3rem;
   border-radius: 11px;
@@ -38,10 +38,17 @@
   height: 60px;
 }
 
+.span i {
+  color: #ec7f01;
+}
+
 .title {
+  font-size: 20px;
 }
 
 .text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 500px) {

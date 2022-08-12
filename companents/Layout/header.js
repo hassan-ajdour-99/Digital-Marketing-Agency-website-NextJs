@@ -17,11 +17,11 @@ function Header() {
   return (
     <div className={classes.container}>
       <Link passHref href="/">
-        <h1 className={classes.title}> Forewaiten </h1>
+        <h1 className={classes.title}> Forevaiten </h1>
       </Link>
       <ul className={classes.list}>
         <li className={classes.listItem}>
-          <Link href="/Blogs"> Blogs</Link>
+          <Link href="/blogs"> Blogs</Link>
         </li>
         <li className={classes.listItem}>
           <Link href="/services/design-creation"> Design </Link>
@@ -54,7 +54,7 @@ function Header() {
       >
         <ul className={classes.menuUl}>
           <li>
-            <Link href="/Blogs" className={classes.Items}>
+            <Link href="/blogs" className={classes.Items}>
               Blogs
             </Link>
           </li>

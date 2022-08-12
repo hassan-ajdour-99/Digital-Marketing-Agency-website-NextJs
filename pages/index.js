@@ -8,15 +8,15 @@ import Prices from "../companents/Price/Prices";
 import { services, prices, users } from "../data/data";
 import Users from "../companents/Users/Users";
 import Contact from "../companents/Contact/Contact";
+import HeadComponent from "../companents/Layout/HeadComponent";
 
 export default function Home({ servicesData, pricesData, usersData }) {
   return (
     <div className={classes.container}>
       <Head>
-        <title> InvePlatform </title>
         <meta
           name="description"
-          content="diesefive Digital is an Amazing Digital Marketing company in Morocco"
+          content=" Forevaiten Digital is the best recommended Digital Marketing company in Morocco"
         />
         <meta
           name="description"
@@ -34,6 +34,8 @@ export default function Home({ servicesData, pricesData, usersData }) {
           content="The Best Digital Marketing Agency in Morocco"
         />
       </Head>
+
+      {/* <HeadComponent /> */}
       <Intro />
       <Services services={servicesData} />
       <Showcase />

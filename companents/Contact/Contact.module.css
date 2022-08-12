@@ -1,6 +1,6 @@
 .container {
   padding: 5rem;
-  background-color: rgb(26, 37, 190);
+  background-color: rgb(38, 7, 88);
 }
 
 .content {
@@ -12,8 +12,8 @@
 }
 
 .contactPhoto {
-  background-color: rgb(255, 0, 0);
-  color: #fff;
+  background-color: rgb(232, 239, 255);
+  color: rgb(61, 7, 161);
   padding: 1rem;
   border-radius: 10px;
   font-weight: bold;
@@ -25,7 +25,7 @@
 }
 
 .card {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(86, 6, 139);
   padding: 2rem;
   border-radius: 10px;
 }

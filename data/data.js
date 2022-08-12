@@ -42,7 +42,7 @@ export const services = [
     id: 2,
     name: "design-creation",
     title: "Design Creation",
-    desc: "We Provide Amazing designs & Social media posters & Logos to our Customers .",
+    desc: "We Provide Amazing designs & Social media posters & Logos to our Customers ",
     image: "/images/001.png",
     images: [
       {
@@ -119,31 +119,40 @@ export const prices = [
   {
     id: "1",
     type: "Standard",
-    price: 99,
+    price: 999,
     characters: [
       { id: "a", name: "Free Demaine Name" },
       { id: "b", name: "Code Source" },
+      { id: "d", name: "Responsive Website" },
       { id: "c", name: "Free Support" },
     ],
   },
   {
     id: "2",
     type: "Premuimn",
-    price: 199,
+    price: 1999,
     characters: [
       { id: "d", name: "Free Demaine Name" },
       { id: "e", name: "Code Source" },
-      { id: "f", name: "Free Support" },
+      { id: "d", name: "Responsive Website" },
+      { id: "l", name: "Mobile Layout" },
+      { id: "v", name: "Free Logo" },
+      { id: "f", name: "Free Support 24/24h" },
     ],
   },
   {
     id: "3",
     type: "Professional",
-    price: 199,
+    price: 3999,
     characters: [
       { id: "g", name: "Free Demaine Name" },
       { id: "h", name: "Code Source" },
-      { id: "j", name: "Free Support" },
+      { id: "d", name: "Responsive Website" },
+      { id: "l", name: "Mobile Layout" },
+      { id: "v", name: "Free Logo" },
+      { id: "j", name: "Free Support 24/24h" },
+      { id: "x", name: "Free Hosting 1yr" },
+      { id: "z", name: "Free sLL 1yr" },
     ],
   },
 ];
@@ -151,6 +160,11 @@ export const prices = [
 export const users = [
   {
     id: "1",
+    name: "Hassan",
+    comment: "this is an nice website",
+  },
+  {
+    id: "2",
     name: "Hassan",
     comment: "this is an nice website",
   },

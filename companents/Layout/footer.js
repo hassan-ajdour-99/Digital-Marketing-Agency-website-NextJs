@@ -9,16 +9,16 @@ function Footer() {
       <div className={classes.carl}>
         <h1>
           <Link href="/contact">
-            <span>Diesefive Media</span>
+            <span> Forevaiten </span>
           </Link>
         </h1>
-        <h3> For Web & Marketing</h3>
+        <h3> For Web & Marketing </h3>
         <p>Copyright &copy; 2022</p>
       </div>
       <div className={classes.carS}>
         <div className={classes.cartItem}>
           <i class="fas fa-map-marker-alt"></i>
-          SALE , Hey Karima N 87 STREET - Morocco
+          SALE , Hey Karima N 11001 STREET - Morocco
         </div>
         <div className={classes.cartItem}>
           <i class="fas fa-location-arrow"></i>

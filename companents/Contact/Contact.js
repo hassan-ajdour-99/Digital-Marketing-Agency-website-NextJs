@@ -42,9 +42,9 @@ export default function contact() {
     <div className={classes.container}>
       <div className={classes.content}>
         <div className={classes.contactPhoto} data-aos="fade-down">
-          <p> Hello! We are Forewaiten Team . </p>
+          <p> Hello! We are Forevaiten Team . </p>
           <p> Let's Work Together, Feel Free to Contact us! </p>
-          <p> We will get you soon as possible . </p>
+          <p> We will get back to you as soon as possible . </p>
         </div>
         <div className={classes.contactForm}>
           <div className={classes.card} data-aos="fade-down">
